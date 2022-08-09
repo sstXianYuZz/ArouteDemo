@@ -17,6 +17,7 @@ public class MainActivity extends BaseActivity {
 
 
     //路由传递参数 自动赋值  可不传递为初始值  使用这个注解
+    // 使用int long 时最好添加初始值 之前遇到过一个aroute自带的的bug内部解析时会去获取老的缓存
     @Autowired
     String key;
 

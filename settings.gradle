@@ -1,2 +1,2 @@
 include ':app', ':arouetLib', ':loginModel', ':userLib'
-rootProject.name='My Application'
+rootProject.name='ArouteDemo'
