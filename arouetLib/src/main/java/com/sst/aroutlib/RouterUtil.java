@@ -15,8 +15,14 @@ import com.alibaba.android.arouter.launcher.ARouter;
 
 import java.util.Map;
 
+
 /**
- * 示例 arouter://zhenhun/activity/main?name=珍婚&age=1900&url=https://github.com
+ * @Description
+ * @Author sst
+ * @Date 2022/8/9
+ */
+/**
+ * 示例 arouter://demo/activity/main?name=姓名&age=1900&url=https://github.com
  * 1.所有路由跳转使用RouterUtil route 方法
  * 2.目标页面注解(path = "/main/activity") 第一个路径为'activity'，第二路径activityType
  * 3.目标页面需要注解声明，接受参数及类型(注解声明的参数通过bundle 获取的)
@@ -25,7 +31,7 @@ import java.util.Map;
 public class RouterUtil {
     public static final String TAG = RouterUtil.class.getSimpleName();
     public static final String SCHEME = "arouter://";
-    public static final String HOST = "hibobi";
+    public static final String HOST = "demo";
 
     public static void route(@NonNull String type) {
         route(type, null);

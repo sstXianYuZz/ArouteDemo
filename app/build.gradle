@@ -33,6 +33,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     annotationProcessor 'com.alibaba:arouter-compiler:1.2.2'
     api project(':arouetLib')
-    api project(':loginModel')
+    api project(':login')
     api project(':userLib')
 }

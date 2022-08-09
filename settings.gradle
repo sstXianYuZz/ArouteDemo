@@ -1,2 +1,2 @@
-include ':app', ':arouetLib', ':loginModel', ':userLib'
+include ':app', ':arouetLib', ':login', ':userLib'
 rootProject.name='ArouteDemo'
