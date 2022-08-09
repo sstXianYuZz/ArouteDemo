@@ -18,10 +18,6 @@ import java.util.Map;
 
 @Route(path =ActivityType.login)
 public class LoginActivity extends BaseActivity {
-    @Override
-    public String getType() {
-        return ActivityType.login;
-    }
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -35,9 +31,6 @@ public class LoginActivity extends BaseActivity {
         Toast.makeText(this, impl.getName(), Toast.LENGTH_SHORT).show();
     }
 
-    public void routeMain(View view) {
-        RouterUtil.route(ActivityType.main);
-    }
 
     public void routeMain2(View view) {
         Map<String, Object> map = new HashMap<>();
