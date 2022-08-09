@@ -27,6 +27,7 @@ import java.util.Map;
  * 2.目标页面注解(path = "/main/activity") 第一个路径为'activity'，第二路径activityType
  * 3.目标页面需要注解声明，接受参数及类型(注解声明的参数通过bundle 获取的)
  * 4.uri会通过&符号进行参数分割。如果发现参数缺失可以通过 getIntent().getStringExtra(ARouter.RAW_URI) 获取原始uir
+ * 5.Aroute 参数切割使用 &,=,? 等符号,不要在参数中包含这些符号 如必须可以使用urlcode编码 接受后进行解码
  */
 public class RouterUtil {
     public static final String TAG = RouterUtil.class.getSimpleName();

@@ -16,7 +16,7 @@ import com.sst.aroutlib.RouterUtil;
 import java.util.HashMap;
 import java.util.Map;
 
-@Route(path =ActivityType.login)
+@Route(path = ActivityType.login)
 public class LoginActivity extends BaseActivity {
 
     @Override
@@ -31,6 +31,10 @@ public class LoginActivity extends BaseActivity {
         Toast.makeText(this, impl.getName(), Toast.LENGTH_SHORT).show();
     }
 
+
+    public void routeMain(View view) {
+        RouterUtil.route(ActivityType.main);
+    }
 
     public void routeMain2(View view) {
         Map<String, Object> map = new HashMap<>();

@@ -29,8 +29,4 @@ public class MainActivity extends BaseActivity {
         tv.setText(TextUtils.isEmpty(key)?"未传递参数":key);
     }
 
-    @Override
-    public String getType() {
-        return ActivityType.main;
-    }
 }
